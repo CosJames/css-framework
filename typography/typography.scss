@@ -1,0 +1,42 @@
+
+// Mixins
+@mixin overall {
+    &.compress {
+        margin: 0;
+        padding : 0;
+        width : fit-content;
+    }
+}
+// * Typography Designs 
+
+.typography {
+    &.xlarge {
+        font-size: 60px; 
+        @include overall;  
+    }
+
+    &.large {
+        font-size : 50px;
+        @include overall;  
+    }
+
+    &.medium {
+        font-size : 45px;
+        @include overall;  
+    }
+
+    &.small {
+        font-size : 40px;
+        @include overall;  
+    }
+}
+
+.subtitle {
+
+}
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+@mixin styles {
+    &.center-1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        @include styles-2;
+    }
+
+    &.center-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include styles-2;
+    }
+
+    &.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+    }
+    
+}
+
+@mixin styles-2 {
+    &.orientation-vertical {
+        flex-direction: column;
+    }
+
+    &.orientation-horizontal {
+        flex-direction: column;
+    }
+    
+}
+
+
+.container {
+
+    &.fit {
+        width : fit-content;
+        @include styles;
+    }
+
+
+    &.match-parent {
+        width : 100%;
+        @include styles;
+    }
+}

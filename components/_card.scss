@@ -1,0 +1,43 @@
+@mixin styles {
+    &.fit {
+        width: fit-content;
+        @include styles;
+    }
+
+    &.match-parent {
+        width: 100%;
+        @include styles;
+
+    }
+}
+
+@mixin styles-2 {
+    &.center-1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &.center-2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }    
+}
+
+.card {
+    background: white;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    margin: 0;
+
+    &.dark {
+        background: $primary-color;
+        @include styles;
+    }
+    
+  
+}
+
+
+
