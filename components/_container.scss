@@ -1,27 +1,34 @@
-@mixin styles {
+@mixin styles-container {
+
+    &.just-flex {
+        display: flex;
+        @include styles-container-2;
+    }
+
     &.center-1 {
         display: flex;
         justify-content: center;
         align-content: center;
-        @include styles-2;
+        @include styles-container-2;
     }
 
     &.center-2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        @include styles-2;
+        @include styles-container-2;
     }
 
     &.grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5px;
+        row-gap: 5px;
     }
     
 }
 
-@mixin styles-2 {
+@mixin styles-container-2 {
     &.orientation-vertical {
         flex-direction: column;
     }
@@ -37,12 +44,12 @@
 
     &.fit {
         width : fit-content;
-        @include styles;
+        @include styles-container;
     }
 
 
-    &.match-parent {
+    &.flow {
         width : 100%;
-        @include styles;
+        @include styles-container;
     }
 }

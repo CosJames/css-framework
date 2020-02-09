@@ -1,17 +1,17 @@
-@mixin styles {
+@mixin styles-card {
     &.fit {
         width: fit-content;
-        @include styles;
+        @include styles-card-2;
     }
 
-    &.match-parent {
+    &.flow {
         width: 100%;
-        @include styles;
+        @include styles-card-2;
 
     }
 }
 
-@mixin styles-2 {
+@mixin styles-card-2 {
     &.center-1 {
         display: flex;
         justify-content: center;
@@ -27,13 +27,14 @@
 
 .card {
     background: white;
-    box-shadow: $box-shadow;
+    border: $border;
     border-radius: 5px;
-    margin: 0;
+    padding: 10px 5px;
+    margin: 5px;
 
     &.dark {
         background: $primary-color;
-        @include styles;
+        @include styles-card;
     }
     
   
