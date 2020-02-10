@@ -1,0 +1,45 @@
+
+
+.button {
+    cursor: pointer;
+    user-select: none;
+    outline-color : $primary-color;
+    outline-width: thin;
+    border-radius: 5px;
+    padding : 10px;
+    margin : 5px;
+    font-weight: 550;
+    font-size: 12px;
+
+    &.dark {
+        border : none;
+        background : $primary-color;
+        color : white;
+    }
+    
+    &.light {
+        border : 1px solid $primary-color;
+        color : $primary-color;
+
+        &.w-effect {
+            &:hover {
+                color : white;
+                background : $primary-color;
+            }
+        }
+    }
+
+    &.ultra-light {
+        border : none;
+        color : gray;
+        &:hover {
+            background: whitesmoke
+        }
+
+        &:active {
+            background: whitesmoke
+        }
+    }
+    
+
+}

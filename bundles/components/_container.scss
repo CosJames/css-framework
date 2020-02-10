@@ -1,0 +1,64 @@
+@mixin styles-container {
+
+    &.just-flex {
+        display: flex;
+        @include styles-container-2;
+    }
+
+
+    &.center-1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        @include styles-container-2;
+    }
+
+    &.center-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include styles-container-2;
+    }
+
+    &.focal-view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    &.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    
+}
+
+@mixin styles-container-2 {
+    &.orientation-vertical {
+        flex-direction: column;
+    }
+
+    &.orientation-horizontal {
+        flex-direction: row;
+    }
+    
+}
+
+
+.container {
+
+    &.fit {
+        width : fit-content;
+        @include styles-container;
+    }
+
+
+    &.flow {
+        width : 100%;
+        @include styles-container;
+    }
+}

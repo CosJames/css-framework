@@ -1,0 +1,74 @@
+@mixin styles-card {
+    &.material {
+        border: 0;
+        box-shadow: 0 0 5px $gray;
+        @include styles-card-2;
+    }
+
+    &.flat {
+        border: $border;
+        @include styles-card-2;
+    }
+}
+
+@mixin styles-card-2 {
+    &.dark {
+        color: white;
+        background: $primary-color;
+        @include styles-card-3;
+    }
+
+    &.light {
+        background: white;
+        @include styles-card-3;
+    }
+}
+
+@mixin styles-card-3 {
+    &.center-1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        @include styles-card-4;
+    }
+
+    &.center-2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        @include styles-card-4;
+    }  
+}
+
+@mixin styles-card-4 {
+    &.orientation-vertical {
+        flex-direction: column;
+    }
+
+    &.orientation-horizontal {
+        flex-direction: row;
+    }  
+}
+
+.card {
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 5px;
+
+    &.fit {
+        width: fit-content;
+        height: fit-content;
+        @include styles-card;
+    }
+
+    &.flow {
+        width: 100%;
+        @include styles-card;
+
+    }
+    
+  
+}
+
+
+

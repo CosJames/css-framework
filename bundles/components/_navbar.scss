@@ -1,0 +1,23 @@
+.navbar {
+    background: white;
+    box-shadow: $shadow;
+    top: 0;
+    padding: 10px;
+    position: sticky;
+    z-index: 9999;
+
+    .navbar-option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+        color: $dark-gray;
+
+        &:hover {
+            background: whitesmoke;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@mixin highlight-styles {
+    background: none;
+    
+
+    &.bg-lightgray {
+        padding: 0 10px;
+        border-radius: 5px;
+        background: lightgray;
+    }
+    &.bg-blue {
+        padding: 0 10px;
+        border-radius: 5px;
+        color: white;
+        background: $primary-color;
+    }
+}
+
+
+.highlight {
+    background: $gray;
+
+    &.blue {
+        color: $primary-color;
+        @include highlight-styles;
+    }
+
+    &.gray {
+        color: $dark-gray;
+        @include highlight-styles;
+    }
+}

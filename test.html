@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css" defer>
-    <script type="module" src="/func/pretzel_mod.mjs" defer></script>
+    <link rel="stylesheet" href="/bundles/css-storer/style.css" defer>
+    <script type="module" src="/bundles/func/CreativJS.js" defer></script>
     <title>Pretzels</title>
 </head>
 <body style="padding : 0; margin: 0; width : 100%;">
@@ -12,6 +12,10 @@
     <div class="navbar">
         <div class="container flow grid" style="grid-template-columns: repeat(9, 1fr);">
             <h5 style="color: #1a96f5;">Pretzel</h5>
+            <div class="container flow just-flex" style="grid-column-start: 7; grid-column-end: 9;">
+                <p class="navbar-option">Home</p>
+                <p class="navbar-option">Home</p>
+            </div>
         </div>
     </div>
 
@@ -29,7 +33,7 @@
 
  
     <div class="container flow grid">
-        <div class="container flow just-flex orientation-horizontal">
+        <div class="container flow just-flex orientation-vertical">
             <p class="subtitle compress">Checkboxes</p>
 
             <label class="wrapper-input checkbox">
@@ -77,27 +81,31 @@
     </div>
       
 
-    <div class="container flow center-1">
-        <div class="card fit center-1">
-            <p class="subtitle medium shown">This is a fit card</p>
+    <div class="container flow center-1 orientation-vertical">
+        <div class="container flow center-1">
+            <div class="card fit flat center-1">
+                <p class="subtitle medium shown">This is a fit card</p>
+            </div>
+        </div>
+
+        <div class="container flow center-1">
+            <div class="card flow flat center-1">
+                <p class="subtitle medium shown">This is a flow card</p>
+            </div>
+        </div>
+        <div class="container flow grid">
+            <div class="card fit">
+                <p class="subtitle medium shown">This </p>
+            </div>
+            <div class="card fit">
+                <p class="subtitle medium shown">is a</p>
+            </div>
+            <div class="card fit">
+                <p class="subtitle medium shown">grid container</p>
+            </div>
         </div>
     </div>
 
-    <div class="card flow center-1">
-        <p class="subtitle medium shown">This is a flow card</p>
-    </div>
-        
-    <div class="container flow grid">
-        <div class="card flow">
-            <p class="subtitle medium shown">This </p>
-        </div>
-        <div class="card flow">
-            <p class="subtitle medium shown">is a</p>
-        </div>
-        <div class="card flow">
-            <p class="subtitle medium shown">grid container</p>
-        </div>
-    </div>
 
 
 

@@ -3,13 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <a rel="stylesheet" href="./css/style.css" defer>
-    <script type="module" src="/func/pretzel_mod.mjs" defer></script>
+    <link rel="stylesheet" href="/bundles/css-storer/style.css">
+    <script type="module" src="/bundles/func/CreativJS.js" defer></script>
     <title>Pretzels</title>
 </head>
-<body style="padding : 0; margin: 0; width : 100%;">
-
-    <a href="https://pretzel-framework.netlify.com/minified-publish/style.css"> Deliver me to the framework</a>
-
+<body class="body expand" style="background: whitesmoke;">
+    <div class="container flow focal-view">
+        <div class="card fit material light center-1 orientation-vertical">
+            <h4>
+                Hi, This is
+                </br>
+                <span class="highlight blue bg-blue">Pretzel Style Framework.</span>
+            </h4>
+            <span class="subtitle medium fade">
+                This is a framework made by <span class="highlight blue">Creaton</span> and being used for web development or web designing. 
+                </br>
+                Visit this page to link <span class="highlight blue">Pretzel Style</span> to your projects.
+            </p>
+            <div class="container flow center-1">
+                <button id="path" class="button light w-effect">Go to documentation</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    let path = document.getElementById("path");
+    path.addEventListener("click", function(){
+        window.location.href = ""
+    })
+</script>
 </html>
