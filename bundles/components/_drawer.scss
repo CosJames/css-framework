@@ -1,0 +1,26 @@
+.drawer {
+    background: white;
+    position: sticky;
+    z-index: 888;
+
+    &.flat {
+        border-bottom: $border;
+    }
+
+    &.material {
+        box-shadow: $shadow;
+    }
+
+    .drawer-option {
+        user-select: none;
+        margin: 0;
+        padding:10px;
+        width: 100%;
+        color: $dark-gray;
+        cursor: pointer;
+        &:hover {
+            background: whitesmoke;
+        }
+    }
+
+}

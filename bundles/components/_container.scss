@@ -20,6 +20,20 @@
         @include styles-container-2;
     }
 
+    &.start-1 {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        @include styles-container-2;
+    }
+
+    &.start-2 {
+        display: flex;
+        justify-items: center;
+        align-items: flex-start;
+        @include styles-container-2;
+    }
+
     &.focal-view {
         display: flex;
         justify-content: center;

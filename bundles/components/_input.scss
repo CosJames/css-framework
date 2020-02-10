@@ -7,20 +7,16 @@
     border : none;
     border-radius: 5px;
     padding : 10px;
-    margin : 5px;
     font-size: 12px;
 
-    &.light {
-        
-    }
+
     
 }
 
 
 .wrapper-input {
     &.search {
-        margin: 10px;
-
+        margin: 0 10px;
         input {
             border: $border;
             &::placeholder {

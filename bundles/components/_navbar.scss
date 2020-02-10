@@ -1,23 +1,88 @@
 .navbar {
     background: white;
-    box-shadow: $shadow;
     top: 0;
-    padding: 10px;
     position: sticky;
+    padding: 10px 0;
     z-index: 9999;
+    width: 100%;
+    
+    &.flat {
+        border-bottom: $border;
+    }
 
+    &.material {
+        box-shadow: $shadow;
+    }
+    .navbar-burger {
+        display: none;
+        user-select: none;
+        outline-color : $primary-color;
+        outline-width: thin;
+        border-radius: 5px;
+        padding : 5px;
+        margin : 5px;
+        font-weight: 550;
+        font-size: 12px;
+        width: 10%;
+        border : none;
+        background: none;
+        color : $dark-gray;
+        cursor: pointer;
+
+        &:hover {
+            background: whitesmoke
+        }
+
+        &:active {
+            background: whitesmoke
+        }
+    }
     .navbar-option {
+        user-select: none;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin: 10px;
-        padding: 10px;
+        margin: 0;
+        padding: 5px;
         cursor: pointer;
-        color: $dark-gray;
+        color: gray;
+        outline: none;
+        height: fit-content;
+        width: fit-content;
+        overflow: hidden;
+        word-wrap: none;
+    
+        &.selected {
+            color: $primary-color;
+            border-radius: 0;
+            border-bottom: 1.5px solid $primary-color;
+            &:hover {
+                background: none;
+            }
+        }
 
+        &.disabled {
+            cursor: default;
+            color: #ccc;
+            border-radius: 0;
+            &:hover {
+                background: none;
+            }
+        }
         &:hover {
             background: whitesmoke;
+        }
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .navbar {
+        .navbar-burger {
+            display: block;
+        }
+        .container:first-child {
+          flex-direction: column;
         }
     }
 }

@@ -11,14 +11,11 @@ function mod_select() {
         a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
         x[i].appendChild(a);
 
-        
         let b = document.createElement("DIV");
         b.setAttribute("class", "select-items select-hide");
 
         for (let j = 1; j < selElmnt.length; j++) {
             
-            
-
             let c = document.createElement("DIV");
             c.innerHTML = selElmnt.options[j].innerHTML;
 

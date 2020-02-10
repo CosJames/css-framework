@@ -9,16 +9,52 @@
 </head>
 <body style="padding : 0; margin: 0; width : 100%;">
 
-    <div class="navbar">
-        <div class="container flow grid" style="grid-template-columns: repeat(9, 1fr);">
-            <h5 style="color: #1a96f5;">Pretzel</h5>
-            <div class="container flow just-flex" style="grid-column-start: 7; grid-column-end: 9;">
-                <p class="navbar-option">Home</p>
-                <p class="navbar-option">Home</p>
+    <!--Navbar Template-->
+    <div class="navbar flat">
+        <div class="container flow just-flex">
+            <!--Container for logo and navigation options-->
+            <div class="container flow center-2">
+                <!--Your logo here-->
+                <h6 style="margin: 0 10px;">Navbar</h6>
+                <!--Your navigation options here-->
+                <div class="container flow center-2 orientation-horizontal" style="width: fit-content;">
+                    <p class="navbar-option selected">Selected</p>
+                    <p class="navbar-option">Not Selected</p>
+                    <p class="navbar-option disabled">Disabled</p>
+                </div>
+            </div>
+            <!--Container for search and select-->
+            <div class="container flow center-2">
+                <label class="wrapper-input search">
+                    <input type="search" class="input light search" placeholder="Search...">
+                    <svg role="presentation" class="i-search" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" color="var(--primary-color)">
+                        <circle cx="14" cy="14" r="12" />
+                        <path d="M23 23 L30 30" />
+                    </svg>
+                </label>
+                <div class="select-tool">
+                    <select>
+                      <option value="0">Select Language</option>
+                      <option value="1">English</option>
+                      <option value="2">Filipino</option>
+                    </select>
+                </div>
+                <!--The hamburger menu that appears only in small screen-->
+                <button class="navbar-burger" style="font-size: 20px;">&#9776;</button>
             </div>
         </div>
     </div>
 
+    <!--Drawer template-->
+    <div class="drawer flat" style="top: 154.2px;">
+        <div class="container flow start-2 orientation-vertical">
+            <p class="subtitle medium shown">The Pretzel Drawer</p>
+            <p class="drawer-option">Settings</p>
+            <p class="drawer-option">Download</p>
+            <p class="drawer-option">System</p>
+            <p class="drawer-option">Logout</p>
+        </div>
+    </div>
 
     <h6>h6</h6>
     <h5>h5</h5>
@@ -27,10 +63,9 @@
     <h2>h2</h2>
     <h1>h1</h1>
     <button class="button ultra-light">Cancel</button>
-    <button class="button light effect">Click Me</button>
+    <button class="button light w-effect">Click Me</button>
     <button class="button dark">Click Me</button>
     </br>
-
  
     <div class="container flow grid">
         <div class="container flow just-flex orientation-vertical">
