@@ -76,9 +76,9 @@ let modal = (function(){
 
     let $ = {};
 
-    $.warn = function(modalId) {
+    $.warn = function(modalId, triggerButton) {
         var modals = document.getElementById(modalId);
-        var btn = document.getElementById("click");
+        var btn = document.getElementById(triggerButton);
         var span = document.getElementsByClassName("close")[0];
 
         btn.onclick = function() {
