@@ -1,26 +1,44 @@
 /*the container must be positioned relative:*/
 .select-tool {
     position: relative;
+    width: fit-content;
+
+    &.white {
+      background: white;
+      border: $border;
+      border-radius: 5px;
+    }
+
+    &.gray {
+      background: #f5f5f5;
+      border: $border;
+      border-radius: 5px;
+    }
+
+    &.transparent {
+      background: none;
+      border: 0;
+      color: gray;
+    }
 
 }
   
 .select-tool select {
   display: none; /*hide original SELECT element:*/
+  
 }
 
 .select-selected {
     display: flex;
-    align-items: flex-start;
-    border: $border;
     border-radius: 5px;
-    background-color: #f5f5f5;
-    padding: 8px 16px;
+    padding: 8px 5px;
     margin: 0 5px;
     cursor: pointer;
     user-select: none;
-    width: max-content;
     overflow: hidden;
-
+    width: fit-content;
+    
+  
     
     &:after {
         position: relative;

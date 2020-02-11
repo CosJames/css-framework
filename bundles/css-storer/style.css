@@ -236,6 +236,7 @@ h6 {
   color: #1a96f5;
   border-radius: 0;
   border-bottom: 1.5px solid #1a96f5;
+  padding-bottom: 4px;
 }
 
 .navbar .navbar-option.selected:hover {
@@ -277,7 +278,7 @@ h6 {
   outline-color: #1a96f5;
   outline-width: thin;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   font-weight: 550;
   font-size: 12px;
@@ -321,49 +322,139 @@ h6 {
           user-select: none;
   outline-color: #1a96f5;
   outline-width: thin;
-  border: none;
+  border: 1.5px solid #e0e0e0;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 12px;
+  margin: 1px;
+  padding: 8px;
+  font-size: 15px;
 }
 
-.wrapper-input.search {
-  margin: 0 10px;
-}
-
-.wrapper-input.search input {
+.input.search {
   border: 1.5px solid #e0e0e0;
 }
 
-.wrapper-input.search input::-webkit-input-placeholder {
+.input.search::-webkit-input-placeholder {
   color: #a0a0a0;
 }
 
-.wrapper-input.search input:-ms-input-placeholder {
+.input.search:-ms-input-placeholder {
   color: #a0a0a0;
 }
 
-.wrapper-input.search input::-ms-input-placeholder {
+.input.search::-ms-input-placeholder {
   color: #a0a0a0;
 }
 
-.wrapper-input.search input::placeholder {
+.input.search::placeholder {
   color: #a0a0a0;
 }
 
-.wrapper-input.search input::-webkit-search-cancel-button {
+.input.search::-webkit-search-cancel-button {
   z-index: 99;
 }
 
-.wrapper-input.search input:placeholder-shown + svg {
+.input.search:placeholder-shown + svg {
   opacity: 10;
 }
 
-.wrapper-input.search input + svg {
+.input.search + svg {
   opacity: 0;
   margin-left: -30px;
   margin-bottom: -2px;
   stroke: #a0a0a0;
+}
+
+.input.email {
+  border: 1.5px solid #e0e0e0;
+}
+
+.input.email::-webkit-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input.email:-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input.email::-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input.email::placeholder {
+  color: #a0a0a0;
+}
+
+.input.email::-webkit-search-cancel-button {
+  z-index: 99;
+}
+
+.input.email:placeholder-shown + span {
+  opacity: 10;
+}
+
+.input.email + span {
+  opacity: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-bottom: -2px;
+  color: #a0a0a0;
+}
+
+.input.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.input.color {
+  -webkit-appearance: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.input.color::webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.input.color::-webkit-color-swatch {
+  border-radius: 3px;
+  border: 1.5px solid #e0e0e0;
+}
+
+.input.date {
+  -webkit-appearance: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.input.date::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input.date::-webkit-calendar-picker-indicator {
+  color: #1a96f5;
+  cursor: pointer;
+}
+
+.input.date::-webkit-calendar-picker-indicator {
+  top: 3px;
+  right: 0;
+  color: #1a96f5;
+  opacity: 1;
+}
+
+.input.datelocal {
+  -webkit-appearance: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .wrapper-input.checkbox {
@@ -393,14 +484,6 @@ h6 {
 .wrapper-input.checkbox .checkbox-text {
   margin: 5px 0;
   font-size: 16px;
-}
-
-.wrapper-input.checkbox .input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
 .wrapper-input.checkbox .checkbox-marker {
@@ -447,6 +530,27 @@ h6 {
 /*the container must be positioned relative:*/
 .select-tool {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.select-tool.white {
+  background: white;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.select-tool.gray {
+  background: #f5f5f5;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.select-tool.transparent {
+  background: none;
+  border: 0;
+  color: gray;
 }
 
 .select-tool select {
@@ -458,23 +562,18 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border: 1.5px solid #e0e0e0;
   border-radius: 5px;
-  background-color: #f5f5f5;
-  padding: 8px 16px;
+  padding: 8px 5px;
   margin: 0 5px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .select-selected:after {

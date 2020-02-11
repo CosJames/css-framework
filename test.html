@@ -20,19 +20,30 @@
                 <div class="container flow center-2 orientation-horizontal" style="width: fit-content;">
                     <p class="navbar-option selected">Selected</p>
                     <p class="navbar-option">Not Selected</p>
+
+                    <div class="select-tool transparent">
+                        <select>
+                          <option value="0">Documents</option>
+                          <option value="1">English</option>
+                          <option value="2">Filipino</option>
+                        </select>
+                    </div>
+
                     <p class="navbar-option disabled">Disabled</p>
+
                 </div>
             </div>
             <!--Container for search and select-->
             <div class="container flow center-2">
                 <label class="wrapper-input search">
-                    <input type="search" class="input light search" placeholder="Search...">
+                    <input type="search" class="input search" placeholder="Search...">
                     <svg role="presentation" class="i-search" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" color="var(--primary-color)">
                         <circle cx="14" cy="14" r="12" />
                         <path d="M23 23 L30 30" />
                     </svg>
                 </label>
-                <div class="select-tool">
+
+                <div class="select-tool gray">
                     <select>
                       <option value="0">Select Language</option>
                       <option value="1">English</option>
@@ -46,7 +57,7 @@
     </div>
 
     <!--Drawer template-->
-    <div class="drawer flat" style="top: 154.2px;">
+    <div class="drawer flat">
         <div class="container flow start-2 orientation-vertical">
             <p class="subtitle medium shown">The Pretzel Drawer</p>
             <p class="drawer-option">Settings</p>
@@ -71,33 +82,59 @@
         <div class="container flow just-flex orientation-vertical">
             <p class="subtitle compress">Checkboxes</p>
 
+            <!--Dependent Inputs-->
             <label class="wrapper-input checkbox">
-                <input type="checkbox" class="input light checkbox" checked="checked" >
+                <input type="checkbox" class="input checkbox" checked="checked" >
                 <p class="checkbox-text">Checkbox Item</p>
                 <span class="checkbox-marker"></span>
             </label>
 
             <label class="wrapper-input checkbox">
-                <input type="checkbox" class="input light checkbox">
+                <input type="checkbox" class="input checkbox">
+                <p class="checkbox-text">Checkbox Item</p>
+                <span class="checkbox-marker"></span>
+            </label>
+
+            <label class="wrapper-input checkbox">
+                <input type="checkbox" class="input checkbox">
                 <p class="checkbox-text">Checkbox Item</p>
                 <span class="checkbox-marker"></span>
             </label>
 
         </div>
+        <div class="container flow center-1 orientation-vertical">
 
-        <label class="wrapper-input search">
-            <input type="search" class="input light search" placeholder="Search...">
-            <svg role="presentation" class="i-search" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" color="var(--primary-color)">
-                <circle cx="14" cy="14" r="12" />
-                <path d="M23 23 L30 30" />
-            </svg>
-        </label>
+            <label class="wrapper-input search">
+                <input type="search" class="input search" placeholder="Search...">
+                <svg role="presentation" class="i-search" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" color="var(--primary-color)">
+                    <circle cx="14" cy="14" r="12" />
+                    <path d="M23 23 L30 30" />
+                </svg>
+            </label>
+
+            <label class="wrapper-input search">
+                <input type="email" class="input email" placeholder="Email...">
+                <span>@</span>
+            </label>
+
+
+
+         
+        </div>
+        <div class="container flow center-1 orientation-vertical">
+            <!--Independent Inputs-->
+            <input type="color" class="input color">
+            <input type="date" class="input date">
+            <input type="datelocal" class="input datelocal">
+        </div>
+
+        
        
     </div>
 
     </br>
     
-    <div class="select-tool" style="width:200px;">
+    <div class="select-tool white">
         <select>
           <option value="0">Select car:</option>
           <option value="1">Audi</option>
