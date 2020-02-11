@@ -324,7 +324,7 @@ h6 {
   outline-width: thin;
   border: 1.5px solid #e0e0e0;
   border-radius: 5px;
-  margin: 1px;
+  margin: 5px;
   padding: 8px;
   font-size: 15px;
 }
@@ -527,12 +527,17 @@ h6 {
   transform: rotate(45deg);
 }
 
+.colorpick-eyedropper-input-trigger {
+  display: none;
+}
+
 /*the container must be positioned relative:*/
 .select-tool {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 10px;
 }
 
 .select-tool.white {
@@ -1396,35 +1401,73 @@ h6 {
   row-gap: 5px;
 }
 
-.drawer {
+.drawer.top {
   background: white;
   position: -webkit-sticky;
   position: sticky;
   z-index: 888;
 }
 
-.drawer.flat {
-  border-bottom: 1.5px solid #e0e0e0;
-}
-
-.drawer.material {
-  -webkit-box-shadow: 0 0 5px #e0e0e0;
-          box-shadow: 0 0 5px #e0e0e0;
-}
-
-.drawer .drawer-option {
+.drawer.top .drawer-option {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin: 0;
   padding: 10px;
-  width: 100%;
   color: #a0a0a0;
+  width: 100%;
   cursor: pointer;
 }
 
-.drawer .drawer-option:hover {
+.drawer.top .drawer-option:hover {
   background: whitesmoke;
+}
+
+.drawer.top.flat {
+  border-bottom: 1.5px solid #e0e0e0;
+}
+
+.drawer.top.material {
+  -webkit-box-shadow: 0 0 5px #e0e0e0;
+          box-shadow: 0 0 5px #e0e0e0;
+}
+
+.drawer.left {
+  background: white;
+  position: fixed;
+  z-index: 888;
+  height: 100%;
+  width: 230px;
+  overflow: hidden;
+}
+
+.drawer.left:hover {
+  overflow: scroll;
+}
+
+.drawer.left .drawer-option {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0;
+  padding: 10px;
+  color: #a0a0a0;
+  width: 90%;
+  cursor: pointer;
+}
+
+.drawer.left .drawer-option:hover {
+  background: whitesmoke;
+}
+
+.drawer.left.flat {
+  border-right: 1.5px solid #e0e0e0;
+}
+
+.drawer.left.material {
+  -webkit-box-shadow: 0 0 5px #e0e0e0;
+          box-shadow: 0 0 5px #e0e0e0;
 }
 /*# sourceMappingURL=style.css.map */

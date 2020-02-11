@@ -1,26 +1,72 @@
+@mixin styles-drawer {
+ 
+
+    
+}
+
+
+
 .drawer {
-    background: white;
-    position: sticky;
-    z-index: 888;
+    &.top {
+        background: white;
+        position: sticky;
+        z-index: 888;
 
-    &.flat {
-        border-bottom: $border;
-    }
+        .drawer-option {
+            user-select: none;
+            margin: 0;
+            padding: 10px;
+            color: $dark-gray;
+            width: 100%;
+            cursor: pointer;
+    
+            &:hover {
+                background: whitesmoke;
+            }
+        }
 
-    &.material {
-        box-shadow: $shadow;
-    }
-
-    .drawer-option {
-        user-select: none;
-        margin: 0;
-        padding:10px;
-        width: 100%;
-        color: $dark-gray;
-        cursor: pointer;
-        &:hover {
-            background: whitesmoke;
+        &.flat {
+            border-bottom: $border;
+        }
+    
+        &.material {
+            box-shadow: $shadow;
         }
     }
 
+    &.left {
+        background: white;
+        position: fixed;
+        z-index: 888;
+        height: 100%;
+        width: 230px;
+        overflow: hidden;
+        
+        &:hover {
+            overflow: scroll;
+        }
+        
+        
+        .drawer-option {
+            user-select: none;
+            margin: 0;
+            padding: 10px;
+            color: $dark-gray;
+            width: 90%;
+            cursor: pointer;
+    
+            &:hover {
+                background: whitesmoke;
+            }
+        }
+
+        &.flat {
+            border-right: $border;
+        }
+    
+        &.material {
+            box-shadow: $shadow;
+        }
+    }
+    
 }

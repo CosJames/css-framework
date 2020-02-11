@@ -6,7 +6,7 @@
     outline-width: thin;
     border : $border;
     border-radius: 5px;
-    margin: 1px;
+    margin: 5px;
     padding : 8px;
     font-size: 15px;
 
@@ -110,6 +110,7 @@
 }
 
 
+
 .wrapper-input {
 
     &.checkbox {
@@ -182,6 +183,12 @@
         }
     }
 
+}
+
+//Windows Feature
+// Disable the color dropper
+.colorpick-eyedropper-input-trigger {
+    display: none;
 }
     
 
