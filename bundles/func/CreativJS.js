@@ -71,4 +71,47 @@ function mod_select() {
     document.addEventListener("click", closeAllSelect);
 }
 
+let modal = (function(){
+    "use strict";
+
+    let $ = {};
+
+    $.warn = function(modalId) {
+        var modals = document.getElementById(modalId);
+        var btn = document.getElementById("click");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modals.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modals.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modals.style.display = "none";
+            }
+        }
+    }
+    return $;
+})()
+var navbar = (function(){
+    "use strict";
+
+    let $ = {};
+
+    $.bottomBorderOnScroll = function(top, ClassOriginalState, ClassScrollState){
+        window.onscroll = function() {
+            if (document.body.scrollTop > top || document.documentElement.scrollTop > top) {
+                document.getElementsByClassName("navbar")[0].className = ClassScrollState;
+            } else {
+                document.getElementsByClassName("navbar")[0].className = ClassOriginalState;
+            }
+        }
+    }
+
+    return $;
+})()
 
