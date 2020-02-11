@@ -4,7 +4,9 @@
   --gray: rgb(224, 224, 224);
 }
 
-
+* {
+  font-family: 'Product Sans';
+}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -250,7 +252,7 @@ h6 {
   background: whitesmoke;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 765px) {
   .navbar .navbar-burger {
     display: block;
   }
@@ -1463,4 +1465,4 @@ h6 {
   -webkit-box-shadow: 0 0 5px #e0e0e0;
           box-shadow: 0 0 5px #e0e0e0;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=pretzelstyle.css.map */
