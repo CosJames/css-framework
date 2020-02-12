@@ -2,6 +2,7 @@
 /** Blue Color Pallete**/
 /** Reddish Blue Pallete **/
 /** Orange Aqua Pallete **/
+/** Orange Aqua Pallete **/
 /** Grays **/
 ::root {
   /** Pretzel Style Accent Color **/
@@ -22,6 +23,11 @@
   --orangeaqua-200: #347474;
   --orangeaqua-300: #35495e;
   --orangeaqua-400: #ee8572;
+  /** Cafe Pallete **/
+  --cafe-100: #F97B4F;
+  --cafe-200: #FCBC66;
+  --cafe-300: #8DC6BF;
+  --cafe-400: #584053;
   /** Grays **/
   --gray: rgb(224, 224, 224);
   --dark-gray: #a0a0a0;
@@ -166,6 +172,209 @@ h6 {
   border-radius: 5px;
   color: white;
   background: #1a96f5;
+}
+
+.ornament.driftingcircle {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px 0;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.ornament.driftingcircle .wave-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ornament.driftingcircle .wave-container .wave {
+  opacity: .4;
+  position: absolute;
+  background: #1a96f5;
+  width: 350px;
+  height: 300px;
+  margin-top: 0px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 3000ms infinite linear;
+          animation: drift 3000ms infinite linear;
+}
+
+.ornament.driftingcircle .wave-container .wave.-three {
+  -webkit-animation: drift 5000ms infinite linear;
+          animation: drift 5000ms infinite linear;
+}
+
+.ornament.driftingcircle .wave-container .wave.-two {
+  -webkit-animation: drift 7000ms infinite linear;
+          animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: #27496d;
+}
+
+.ornament.driftingcircle .box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(80%, rgba(221, 238, 255, 0)), to(white));
+  background: linear-gradient(to bottom, white, rgba(221, 238, 255, 0) 80%, white);
+  z-index: 11;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.ornament.driftingcircle .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ornament.driftingcircle .title-wrapper .title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  left: 0;
+  height: 50%;
+  width: 30%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-indent: .3em;
+}
+
+.ornament.half-driftingcircle {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.ornament.half-driftingcircle .wave-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ornament.half-driftingcircle .wave-container .wave {
+  opacity: .4;
+  position: absolute;
+  background: #1a96f5;
+  top: -40%;
+  width: 400px;
+  height: 350px;
+  margin-top: 0px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 3000ms infinite linear;
+          animation: drift 3000ms infinite linear;
+}
+
+.ornament.half-driftingcircle .wave-container .wave.-three {
+  -webkit-animation: drift 5000ms infinite linear;
+          animation: drift 5000ms infinite linear;
+}
+
+.ornament.half-driftingcircle .wave-container .wave.-two {
+  -webkit-animation: drift 7000ms infinite linear;
+          animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: #27496d;
+}
+
+.ornament.half-driftingcircle .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ornament.half-driftingcircle .title-wrapper .title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-indent: .3em;
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .modal {
