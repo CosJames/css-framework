@@ -14,7 +14,7 @@
 @mixin styles-card-2 {
     &.dark {
         color: white;
-        background: $primary-color;
+        background: whitesmoke;
         @include styles-card-3;
     }
 

@@ -851,6 +851,25 @@ h6 {
   transform: rotate(45deg);
 }
 
+.wrapper-input.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-input.search span {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .colorpick-eyedropper-input-trigger {
   display: none;
 }
@@ -975,7 +994,7 @@ h6 {
 
 .card.fit.material.dark {
   color: white;
-  background: #1a96f5;
+  background: whitesmoke;
 }
 
 .card.fit.material.dark.center-1 {
@@ -1088,7 +1107,7 @@ h6 {
 
 .card.fit.flat.dark {
   color: white;
-  background: #1a96f5;
+  background: whitesmoke;
 }
 
 .card.fit.flat.dark.center-1 {
@@ -1207,7 +1226,7 @@ h6 {
 
 .card.flow.material.dark {
   color: white;
-  background: #1a96f5;
+  background: whitesmoke;
 }
 
 .card.flow.material.dark.center-1 {
@@ -1320,7 +1339,7 @@ h6 {
 
 .card.flow.flat.dark {
   color: white;
-  background: #1a96f5;
+  background: whitesmoke;
 }
 
 .card.flow.flat.dark.center-1 {
