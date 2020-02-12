@@ -1,6 +1,7 @@
 
 mod_select();
 
+// Select Attribute
 function mod_select() {
     let x = document.getElementsByClassName("select-tool");
 
@@ -71,6 +72,7 @@ function mod_select() {
     document.addEventListener("click", closeAllSelect);
 }
 
+// For modals
 let modal = (function(){
     "use strict";
 
@@ -97,6 +99,8 @@ let modal = (function(){
     }
     return $;
 })()
+
+// Navigation Bar editing
 var navbar = (function(){
     "use strict";
 

@@ -1,7 +1,30 @@
+/** Pretzel Style Accent Color **/
+/** Blue Color Pallete**/
+/** Reddish Blue Pallete **/
+/** Orange Aqua Pallete **/
+/** Grays **/
 ::root {
+  /** Pretzel Style Accent Color **/
   --primary-color: #1a96f5;
-  --secondary-color: #004E89;
+  /** Blue Color Pallete**/
+  --blue-100: #00a8cc;
+  --blue-200: #1a96f5;
+  --blue-300: #0c7b93;
+  --blue-400: #27496d;
+  --blue-500: #142850;
+  /** Red Blue Color Pallete**/
+  --redblue-100: #f67280;
+  --redblue-200: #c06c84;
+  --redblue-300: #6c5b7b;
+  --redblue-400: #35477d;
+  /** Orange Aqua Pallete **/
+  --orangeaqua-100: #63b7af;
+  --orangeaqua-200: #347474;
+  --orangeaqua-300: #35495e;
+  --orangeaqua-400: #ee8572;
+  /** Grays **/
   --gray: rgb(224, 224, 224);
+  --dark-gray: #a0a0a0;
 }
 
 * {
@@ -9,8 +32,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
 }
 
 /* Track */
@@ -421,24 +444,24 @@ h6 {
   font-size: 15px;
 }
 
+.input::-webkit-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input:-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input::-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+.input::placeholder {
+  color: #a0a0a0;
+}
+
 .input.search {
   border: 1.5px solid #e0e0e0;
-}
-
-.input.search::-webkit-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.search:-ms-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.search::-ms-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.search::placeholder {
-  color: #a0a0a0;
 }
 
 .input.search::-webkit-search-cancel-button {

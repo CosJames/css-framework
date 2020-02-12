@@ -10,11 +10,13 @@
     padding : 8px;
     font-size: 15px;
 
+    &::placeholder {
+        color : #a0a0a0;
+    }
+    
     &.search {
         border: $border;
-        &::placeholder {
-            color : #a0a0a0;
-        }
+        
         &::-webkit-search-cancel-button {
             z-index: 99;
         }
