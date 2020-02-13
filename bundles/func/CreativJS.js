@@ -78,7 +78,7 @@ let modal = (function(){
 
     let $ = {};
 
-    $.deploy = function(modalId) {
+    $.deploy = function(modalId, isCancellable) {
         var modals = document.getElementById(modalId);
         var span = document.getElementsByClassName("close");
 
@@ -91,8 +91,10 @@ let modal = (function(){
         }
     
         window.onclick = function(event) {
-            if (event.target == modals) {
-                modals.style.display = "none";
+            if(isCancellable == true) {
+                if (event.target == modals) {
+                    modals.style.display = "none";
+                }
             }
         }
     }
