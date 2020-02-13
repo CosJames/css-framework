@@ -78,21 +78,20 @@ let modal = (function(){
 
     let $ = {};
 
-    $.warn = function(modalId, triggerButton) {
+    $.deploy = function(modalId) {
         var modals = document.getElementById(modalId);
-        var btn = document.getElementById(triggerButton);
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("close");
 
-        btn.onclick = function() {
-            modals.style.display = "block";
+        modals.style.display = "block";
+
+        for(let i = 0; i < span.length; i++) {
+            span[i].addEventListener("click", function() {
+                modals.style.display = "none";
+            })
         }
-
-        span.onclick = function() {
-            modals.style.display = "none";
-        }
-
+    
         window.onclick = function(event) {
-            if (event.target == modal) {
+            if (event.target == modals) {
                 modals.style.display = "none";
             }
         }
