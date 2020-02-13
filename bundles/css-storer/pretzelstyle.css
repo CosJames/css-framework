@@ -4,7 +4,7 @@
 /** Orange Aqua Pallete **/
 /** Orange Aqua Pallete **/
 /** Grays **/
-::root {
+:root {
   /** Pretzel Style Accent Color **/
   --primary-color: #1a96f5;
   /** Blue Color Pallete**/
@@ -64,31 +64,31 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
-  margin: 0;
-  padding: 10px;
-}
-
-h3 {
   font-size: 45px;
   margin: 0;
   padding: 10px;
 }
 
-h4 {
+h3 {
   font-size: 40px;
   margin: 0;
   padding: 10px;
 }
 
-h5 {
+h4 {
   font-size: 35px;
   margin: 0;
   padding: 10px;
 }
 
-h6 {
+h5 {
   font-size: 30px;
+  margin: 0;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 25px;
   margin: 0;
   padding: 10px;
 }
