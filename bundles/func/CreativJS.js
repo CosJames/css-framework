@@ -98,6 +98,12 @@ let modal = (function(){
             }
         }
     }
+
+    $.destroy = function(modalId) {
+        var modals = document.getElementById(modalId);
+        modals.style.display = "none";
+    }
+
     return $;
 })()
 
