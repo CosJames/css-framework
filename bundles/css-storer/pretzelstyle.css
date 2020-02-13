@@ -377,6 +377,46 @@ h6 {
   }
 }
 
+@-webkit-keyframes dive {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(80vw);
+            transform: translateY(80vw);
+  }
+}
+
+@keyframes dive {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(80vw);
+            transform: translateY(80vw);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .modal {
   display: none;
   /* Hidden by default */

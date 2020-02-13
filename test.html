@@ -34,6 +34,7 @@
 
                 </div>
             </div>
+
             <!--Container for search and select-->
             <div class="container flow center-2">
                 <label class="wrapper-input search">
@@ -43,6 +44,7 @@
                         <path d="M23 23 L30 30" />
                     </svg>
                 </label>
+
 
                 <div class="select-tool gray">
                     <select>
@@ -83,12 +85,16 @@
         </div>
     </div>
 
+
+
     <h6>h6</h6>
     <h5>h5</h5>
     <h4>h4</h4>
     <h3>h3</h3>
     <h2>h2</h2>
-    <h1>h1</h1>
+    <h1>h1</h1>s
+    <h6 style="animation: dive 5s ease-in-out;">HIIII</h6>
+
     <button class="button ultra-light">Cancel</button>
     <button class="button light w-effect">Click Me</button>
     <button class="button dark">Click Me</button>
@@ -207,7 +213,7 @@
             <p>Some other text...</p>
           </div>
           <div class="modal-footer">
-            <button class="button dark">Proceed</button>
+            <button id="proceed" class="button dark">Proceed</button>
           </div>
         </div>
       
@@ -246,6 +252,15 @@
         <p>Hello</p>
     </div>
 
+    <script>
+        document.getElementById("click").addEventListener("click", function() {
+            modal.deploy("myModal", true);
+
+            document.getElementById("proceed").addEventListener("click", function() {
+                modal.destroy("myModal");
+            })
+        })
+    </script>
 
 
 </body>

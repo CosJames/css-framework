@@ -1,0 +1,17 @@
+@keyframes dive {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(80vw);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

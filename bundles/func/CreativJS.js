@@ -101,7 +101,12 @@ let modal = (function(){
 
     $.destroy = function(modalId) {
         var modals = document.getElementById(modalId);
-        modals.style.display = "none";
+
+        modals.style.animation = "fadeOut 0.5s ease-in-out"
+        setTimeout(function() {
+            modals.style.animation = ""
+            modals.style.display = "none";
+        }, 500)
     }
 
     return $;
