@@ -109,6 +109,8 @@ let modal = (function(){
         }, 500)
     }
 
+
+
     return $;
 })()
 
