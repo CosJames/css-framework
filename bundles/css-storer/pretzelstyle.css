@@ -806,22 +806,6 @@ h6 {
   border: 1.5px solid #e0e0e0;
 }
 
-.input.email::-webkit-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.email:-ms-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.email::-ms-input-placeholder {
-  color: #a0a0a0;
-}
-
-.input.email::placeholder {
-  color: #a0a0a0;
-}
-
 .input.email::-webkit-search-cancel-button {
   z-index: 99;
 }
